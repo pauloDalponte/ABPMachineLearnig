@@ -3,7 +3,6 @@ from joblib import load
 
 app = Flask(__name__)
 
-
 modelo = load(r'C:\Users\paulocesar\Documents\Sistemas Bendo\ABPMachineLearnig\models\model_nota_REDACAO.pkl')
 
 @app.route('/prever', methods=['POST'])
