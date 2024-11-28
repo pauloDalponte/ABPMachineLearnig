@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+
+        
+        <label for="tp_faixa_etaria">Faixa etária</label>
+        <select id="tp_faixa_etaria" name="tp_faixa_etaria">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">Menor de 17 anos</option>
+            <option value="2">17 anos</option>
+            <option value="3">18 anos</option>
+            <option value="4">19 anos</option>
+            <option value="5">20 anos</option>
+            <option value="6">21 anos</option>
+            <option value="7">22 anos</option>
+            <option value="8">23 anos</option>
+            <option value="9">24 anos</option>
+            <option value="10">25 anos</option>
+            <option value="11">Entre 26 e 30 anos</option>
+            <option value="12">Entre 31 e 35 anos</option>
+            <option value="13">Entre 36 e 40 anos</option>
+            <option value="14">Entre 41 e 45 anos</option>
+            <option value="15">Entre 46 e 50 anos</option>
+            <option value="16">Entre 51 e 55 anos</option>
+            <option value="17">Entre 56 e 60 anos</option>
+            <option value="18">Entre 61 e 65 anos</option>
+            <option value="19">Entre 66 e 70 anos</option>
+            <option value="20">Maior de 70 anos</option>
+        </select>
+
+        
+        <label for="tp_sexo">Sexo</label>
+        <select id="tp_sexo" name="tp_sexo">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        
+        <label for="tp_estado_civil">Estado Civil</label>
+        <select id="tp_estado_civil" name="tp_estado_civil">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="0">Não informado</option>
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)/Mora com companheiro(a)</option>
+            <option value="3">Divorciado(a)/Desquitado(a)/Separado(a)</option>
+            <option value="4">Viúvo(a)</option>
+        </select>
+
+        
+        <label for="tp_cor_raca">Cor/raça</label>
+        <select id="tp_cor_raca" name="tp_cor_raca">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="0">Não declarado</option>
+            <option value="1">Branca</option>
+            <option value="2">Preta</option>
+            <option value="3">Parda</option>
+            <option value="4">Amarela</option>
+            <option value="5">Indígena</option>
+            <option value="6">Não dispõe da informação</option>
+        </select>
+
+        
+        <label for="tp_nacionalidade">Nacionalidade</label>
+        <select id="tp_nacionalidade" name="tp_nacionalidade">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="0">Não informado</option>
+            <option value="1">Brasileiro(a)</option>
+            <option value="2">Brasileiro(a) Naturalizado(a)</option>
+            <option value="3">Estrangeiro(a)</option>
+            <option value="4">Brasileiro(a) Nato(a), nascido(a) no exterior</option>
+        </select>
+
+        
+        <label for="tp_st_conclusao">Situação de conclusão do Ensino Médio</label>
+        <select id="tp_st_conclusao" name="tp_st_conclusao">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">Já concluí o Ensino Médio</option>
+            <option value="2">Estou cursando e concluirei o Ensino Médio em 2023</option>
+            <option value="3">Estou cursando e concluirei o Ensino Médio após 2023</option>
+            <option value="4">Não concluí e não estou cursando o Ensino Médio</option>
+        </select>
+
+        
+        <label for="tp_ano_concluiu">Ano de Conclusão do Ensino Médio</label>
+        <select id="tp_ano_concluiu" name="tp_ano_concluiu">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="0">Não informado</option>
+            <option value="1">2022</option>
+            <option value="2">2021</option>
+            <option value="3">2020</option>
+            <option value="4">2019</option>
+            <option value="5">2018</option>
+            <option value="6">2017</option>
+            <option value="7">2016</option>
+            <option value="8">2015</option>
+            <option value="9">2014</option>
+            <option value="10">2013</option>
+            <option value="11">2012</option>
+            <option value="12">2011</option>
+            <option value="13">2010</option>
+            <option value="14">2009</option>
+            <option value="15">2008</option>
+            <option value="16">2007</option>
+            <option value="17">Antes de 2007</option>
+        </select>
+
+        
+        <label for="tp_escola">Tipo de escola do Ensino Médio</label>
+        <select id="tp_escola" name="tp_escola">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">Não Respondeu</option>
+            <option value="2">Pública</option>
+            <option value="3">Privada</option>
+        </select>
+
+        
+        <label for="tp_ensino">Tipo de instituição que concluiu ou concluirá o Ensino Médio</label>
+        <select id="tp_ensino" name="tp_ensino">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">Ensino Regular</option>
+            <option value="2">Educação Especial - Modalidade Substitutiva</option>
+        </select>
+
+        
+        <label for="in_treineiro">Fez a prova com intuito de apenas treinar seus conhecimentos?</label>
+        <select id="in_treineiro" name="in_treineiro">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+        
+        <label for="q001">Até que série seu pai, ou o homem responsável por você, estudou?</label>
+        <select id="q001" name="q001">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Nunca estudou.</option>
+            <option value="B">Não completou a 4ª série/5º ano do Ensino Fundamental.</option>
+            <option value="C">Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental.</option>
+            <option value="D">Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio.</option>
+            <option value="E">Completou o Ensino Médio, mas não completou a Faculdade.</option>
+            <option value="F">Completou a Faculdade, mas não completou a Pós-graduação.</option>
+            <option value="G">Completou a Pós-graduação.</option>
+            <option value="H">Não sei.</option>
+        </select>
+
+        
+        <label for="q002">Até que série sua mãe, ou a mulher responsável por você, estudou?</label>
+        <select id="q002" name="q002">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Nunca estudou.</option>
+            <option value="B">Não completou a 4ª série/5º ano do Ensino Fundamental.</option>
+            <option value="C">Completou a 4ª série/5º ano, mas não completou a 8ª série/9º ano do Ensino Fundamental.</option>
+            <option value="D">Completou a 8ª série/9º ano do Ensino Fundamental, mas não completou o Ensino Médio.</option>
+            <option value="E">Completou o Ensino Médio, mas não completou a Faculdade.</option>
+            <option value="F">Completou a Faculdade, mas não completou a Pós-graduação.</option>
+            <option value="G">Completou a Pós-graduação.</option>
+            <option value="H">Não sei.</option>
+        </select>
+
+        
+        <label for="q003">A partir da apresentação de algumas ocupações divididas em grupos ordenados, indique o grupo que contempla a ocupação mais próxima da ocupação do seu pai ou do homem responsável por você. (Se ele não estiver trabalhando, escolha uma ocupação pensando no último trabalho dele).</label>
+        <select id="q003" name="q003">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Grupo 1: Lavrador, agricultor sem empregados, bóia fria, criador de animais (gado, porcos, galinhas, ovelhas, cavalos etc.), apicultor, pescador, lenhador, seringueiro, extrativista.
+            </option>
+            <option value="B">Grupo 2: Diarista, empregado doméstico, cuidador de idosos, babá, cozinheiro (em casas particulares), motorista particular, jardineiro, faxineiro de empresas e prédios, vigilante, porteiro, carteiro, office-boy, vendedor, caixa, atendente de loja, auxiliar administrativo, recepcionista, servente de pedreiro, repositor de mercadoria.
+            </option>
+            <option value="C">Grupo 3: Padeiro, cozinheiro industrial ou em restaurantes, sapateiro, costureiro, joalheiro, torneiro mecânico, operador de máquinas, soldador, operário de fábrica, trabalhador da mineração, pedreiro, pintor, eletricista, encanador, motorista, caminhoneiro, taxista.
+            </option>
+            <option value="D">Grupo 4: Professor (de ensino fundamental ou médio, idioma, música, artes etc.), técnico (de enfermagem, contabilidade, eletrônica etc.), policial, militar de baixa patente (soldado, cabo, sargento), corretor de imóveis, supervisor, gerente, mestre de obras, pastor, microempresário (proprietário de empresa com menos de 10 empregados), pequeno comerciante, pequeno proprietário de terras, trabalhador autônomo ou por conta própria.
+            </option>
+            <option value="E">Grupo 5: Médico, engenheiro, dentista, psicólogo, economista, advogado, juiz, promotor, defensor, delegado, tenente, capitão, coronel, professor universitário, diretor em empresas públicas ou privadas, político, proprietário de empresas com mais de 10 empregados.
+            </option>
+            <option value="F">Não sei.</option>
+        </select>
+
+        <label for="q004">A partir da apresentação de algumas ocupações divididas em grupos ordenados, indique o grupo que contempla a ocupação mais próxima da ocupação da sua mãe ou da mulher responsável por você. (Se ela não estiver trabalhando, escolha uma ocupação pensando no último trabalho dela).</label>
+        <select id="q004" name="q004">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Grupo 1: Lavradora, agricultora sem empregados, bóia fria, criadora de animais (gado, porcos, galinhas, ovelhas, cavalos etc.), apicultora, pescadora, lenhadora, seringueira, extrativista.
+            </option>
+            <option value="B">Grupo 2: Diarista, empregada doméstica, cuidadora de idosos, babá, cozinheira (em casas particulares), motorista particular, jardineira, faxineira de empresas e prédios, vigilante, porteira, carteira, office-boy, vendedora, caixa, atendente de loja, auxiliar administrativa, recepcionista, servente de pedreiro, repositora de mercadoria.
+            </option>
+            <option value="C">Grupo 3: Padeira, cozinheira industrial ou em restaurantes, sapateira, costureira, joalheira, torneira mecânica, operadora de máquinas, soldadora, operária de fábrica, trabalhadora da mineração, pedreira, pintora, eletricista, encanadora, motorista, caminhoneira, taxista.
+            </option>
+            <option value="D">Grupo 4: Professora (de ensino fundamental ou médio, idioma, música, artes etc.), técnica (de enfermagem, contabilidade, eletrônica etc.), policial, militar de baixa patente (soldado, cabo, sargento), corretora de imóveis, supervisora, gerente, mestre de obras, pastora, microempresária (proprietária de empresa com menos de 10 empregados), pequena comerciante, pequena proprietária de terras, trabalhadora autônoma ou por conta própria.
+            </option>
+            <option value="E">Grupo 5: Médica, engenheira, dentista, psicóloga, economista, advogada, juíza, promotora, defensora, delegada, tenente, capitã, coronel, professora universitária, diretora em empresas públicas ou privadas, política, proprietária de empresas com mais de 10 empregados.
+            </option>
+            <option value="F">Não sei.</option>
+        </select>
+
+        
+        <label for="q005">Incluindo você, quantas pessoas moram atualmente em sua residência?</label>
+        <select id="q005" name="q005">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="1">1, pois moro sozinho(a).</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select>
+
+        
+        <label for="q006">Qual é a renda mensal de sua família?</label>
+        <select id="q006" name="q006">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Nenhuma Renda</option>
+            <option value="B">Até R$ 1.320,00</option>
+            <option value="C">De R$ 1.320,01 até R$ 1.980,00.</option>
+            <option value="D">De R$ 1.980,01 até R$ 2.640,00.</option>
+            <option value="E">De R$ 2.640,01 até R$ 3.300,00.</option>
+            <option value="F">De R$ 3.300,01 até R$ 3.960,00.</option>
+            <option value="G">De R$ 3.960,01 até R$ 5.280,00.</option>
+            <option value="H">De R$ 5.280,01 até R$ 6.600,00.</option>
+            <option value="I">De R$ 6.600,01 até R$ 7.920,00.</option>
+            <option value="J">De R$ 7.920,01 até R$ 9240,00.</option>
+            <option value="K">De R$ 9.240,01 até R$ 10.560,00.</option>
+            <option value="L">De R$ 10.560,01 até R$ 11.880,00.</option>
+            <option value="M">De R$ 11.880,01 até R$ 13.200,00.</option>
+            <option value="N">De R$ 13.200,01 até R$ 15.840,00.</option>
+            <option value="O">De R$ 15.840,01 até R$19.800,00.</option>
+            <option value="P">De R$ 19.800,01 até R$ 26.400,00.</option>
+            <option value="Q">Acima de R$ 26.400,00.</option>
+        </select>
+
+        
+        <label for="q007">Em sua residência trabalha empregado(a) doméstico(a)?</label>
+        <select id="q007" name="q007">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um ou dois dias por semana.</option>
+            <option value="C">Sim, três ou quatro dias por semana.</option>
+            <option value="D">Sim, pelo menos cinco dias por semana.</option>
+        </select>
+
+        
+        <label for="q008">Na sua residência tem banheiro?</label>
+        <select id="q008" name="q008">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q009">Na sua residência tem quartos para dormir?</label>
+        <select id="q009" name="q009">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q010">Na sua residência tem carro?</label>
+        <select id="q010" name="q010">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q011">Na sua residência tem motocicleta?</label>
+        <select id="q011" name="q011">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q012">Na sua residência tem geladeira?</label>
+        <select id="q012" name="q012">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q013">Na sua residência tem freezer (independente ou segunda porta da geladeira)?</label>
+        <select id="q013" name="q013">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q014">Na sua residência tem máquina de lavar roupa? (o tanquinho NÃO deve ser considerado)</label>
+        <select id="q014" name="q014">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q015">Na sua residência tem máquina de secar roupa (independente ou em conjunto com a máquina de lavar roupa)?</label>
+        <select id="q015" name="q015">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q016">Na sua residência tem forno micro-ondas?</label>
+        <select id="q016" name="q016">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q017">Na sua residência tem máquina de lavar louça?</label>
+        <select id="q017" name="q017">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q018">Na sua residência tem aspirador de pó?</label>
+        <select id="q018" name="q018">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim.</option>
+        </select>
+
+        
+        <label for="q019">Na sua residência tem televisão em cores?</label>
+        <select id="q019" name="q019">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, uma.</option>
+            <option value="C">Sim, duas.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q020">Na sua residência tem aparelho de DVD?</label>
+        <select id="q020" name="q020">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim.</option>
+        </select>
+
+        
+        <label for="q021">Na sua residência tem TV por assinatura?</label>
+        <select id="q021" name="q021">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim.</option>
+        </select>
+
+        
+        <label for="q022">Na sua residência tem telefone celular?</label>
+        <select id="q022" name="q022">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q023">Na sua residência tem telefone fixo?</label>
+        <select id="q023" name="q023">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim.</option>
+        </select>
+
+        
+        <label for="q024">Na sua residência tem computador?</label>
+        <select id="q024" name="q024">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim, um.</option>
+            <option value="C">Sim, dois.</option>
+            <option value="D">Sim, três.</option>
+            <option value="E">Sim, quatro ou mais.</option>
+        </select>
+
+        
+        <label for="q025">Na sua residência tem acesso à Internet?</label>
+        <select id="q025" name="q025">
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="A">Não.</option>
+            <option value="B">Sim.</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<script>
+    
+    const form = document.getElementById("formulario");
+    
+    form.addEventListener("submit", function (event) {
+    
+      const selects = form.querySelectorAll("select");
+  
+      let isValid = true;
+  
+      selects.forEach((select) => {
+        if (select.value === "") {
+          isValid = false; 
+          select.classList.add("invalid");
+        } else {
+          select.classList.remove("invalid");
+        }
+      });
+  
+      if (!isValid) {
+        event.preventDefault();
+        alert("Por favor, preencha todos os campos obrigatórios.");
+      }
+    });
+  </script>
+
+</html>
