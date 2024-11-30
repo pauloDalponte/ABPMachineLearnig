@@ -445,26 +445,39 @@
 <script>
     
     const form = document.getElementById("formulario");
-    
-    form.addEventListener("submit", function (event) {
-    
-      const selects = form.querySelectorAll("select");
-  
-      let isValid = true;
-  
-      selects.forEach((select) => {
-        if (select.value === "") {
-          isValid = false; 
-          select.classList.add("invalid");
-        } else {
-          select.classList.remove("invalid");
-        }
-      });
-  
-      if (!isValid) {
-        event.preventDefault();
+
+    form.addEventListener("submit", async function (event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(form); 
+    const data = Object.fromEntries(formData.entries()); 
+
+    if (Object.values(data).some(value => value === "")) {
         alert("Por favor, preencha todos os campos obrigatórios.");
-      }
+        return;
+    }
+
+    try {
+        const response = await fetch("http://127.0.0.1:5000/prever", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data), 
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro na requisição à API");
+        }
+
+        const result = await response.json(); 
+        console.log(result); 
+
+        alert(`Resultado da previsão: ${result.prediction}`);
+    } catch (error) {
+        console.error(error);
+        alert("Erro ao conectar-se à API.");
+    }
     });
   </script>
 
